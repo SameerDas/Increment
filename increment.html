@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment</title>
+    <style>
+        *{
+            top:0px;
+            margin:3px;
+        }
+    div{
+        width:500px;
+        height:500px;
+        background-image: url("sky.jpg");
+        /* background-color: red; */
+        /* background-repeat: no-repeat; */
+        background-size:cover;
+        margin:auto;
+    }
+    h1,h2{
+        padding-top:40px;
+        color:white;
+        font-size: 40px;
+    }
+    h2{
+        font-size: 60px;
+    }
+    button{
+        width: 300px;
+        height:55px;
+    }
+    #in{
+        background-color: darkred;
+        display: block;
+        margin-top: 60px;
+        font-size: 30px;
+        color:white;
+        border:none;
+        border-radius: 7px;
+    }
+    #sa{
+        background-color: green;
+        display: block;
+        margin-top: 20px;
+        /* padding:10px 13px 10px 13px; */
+        font-size: 30px;
+        color:white;
+        border:none;
+        border-radius: 7px;
+    }
+    p{
+        font-size: 30px;
+        padding-left: 60px;
+        padding-top: 30px;
+        font-weight:bold;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <center><h1>People Entered</h1>
+            <h2 id="tex">0</h2>
+        <button id="in" onclick="increased()">Increment</button>
+        <button id="sa" onclick="display()">Save</button>
+       </center>
+       <p id="pre">Previous Entries:</p>
+    </div>
+    <script src="incr.js"></script>
+</body>
+</html>
